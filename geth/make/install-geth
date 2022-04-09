@@ -1,0 +1,14 @@
+#!/bin/sh
+
+mkdir data
+
+sudo add-apt-repository -7 ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install ethereum
+
+wget 
+
+geth --network 666 --datadir data init genesis.json
+nohup geth --allow-insecure-unlock --networkid 666 &
+sleep 2
+geth attach --exec "eth.blockNumber"

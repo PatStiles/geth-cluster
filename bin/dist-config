@@ -1,0 +1,4 @@
+#!/Users/Patron/Dev/data_pods_benchmark/data-pods-cluster/bin/python3
+# EASY-INSTALL-SCRIPT: 'dist-make==0.0.1','dist-config'
+__requires__ = 'dist-make==0.0.1'
+__import__('pkg_resources').run_script('dist-make==0.0.1', 'dist-config')

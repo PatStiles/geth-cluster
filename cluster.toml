@@ -1,0 +1,11 @@
+[cluster]
+workdir = "~/"
+username = "azureuser"
+prefix = ""
+suffix = ""
+
+[machine-classes]
+clients = [["20.231.84.65", "10.0.0.4"]]
+servers = [["20.232.32.211", "10.0.0.5"]]
+blockchain = [["20.232.35.43", "10.0.0.6"]]
+

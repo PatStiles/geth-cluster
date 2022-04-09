@@ -1,0 +1,19 @@
+#! /bin/bash
+
+#TODO rewrite in python, add colors and better optics
+
+FILE_NAME=$1
+
+while : 
+do
+    echo "### File: ${FILE_NAME}"
+    column -t ${FILE_NAME}
+
+    if inotifywait -q --event modify ${FILE_NAME}; then
+        echo "### Detected change."
+    else
+        echo "Failed to watch file"
+        exit -1
+    fi
+done
+
